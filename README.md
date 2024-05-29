@@ -1,4 +1,4 @@
-# Arquivos de configuração do Qtile, Alacritty, Nvim e Tmux
+# Arquivos de configuração
 ### Dependências
 - NeoVim: RipGrep, FD, Xclip
 - Tmux: Tmux Plugin Manager
