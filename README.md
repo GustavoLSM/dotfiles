@@ -1,6 +1,8 @@
 # Arquivos de configuração
 ### Dependências
-Fonte Hack Nerd Font Mono
+- Kitty Terminal
+- Fonte Hack Nerd Font Mono
+- i3Wm
 
 ### Instalação
 - Após instalar as dependências, executar o script install.sh
