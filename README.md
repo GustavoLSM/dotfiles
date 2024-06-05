@@ -1,8 +1,6 @@
 # Arquivos de configuração
 ### Dependências
-- NeoVim: RipGrep, FD, Xclip
-- Tmux: Tmux Plugin Manager
-- Kitty: Fonte JetBrainsMono Nerd Font
+Fonte Hack Nerd Font Mono
 
 ### Instalação
 - Após instalar as dependências, executar o script install.sh
