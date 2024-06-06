@@ -6,6 +6,8 @@
 - i3Wm
 - Picom
 - Polybar
+- Rofi
+- Maim
 - Feh
 
 ### Instalação
