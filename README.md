@@ -1,7 +1,8 @@
 # Arquivos de configuração
 ### Dependências
-- Kitty Terminal
+- Fonte Noto-Emoji e Noto-Extras
 - Fonte Hack Nerd Font Mono
+- Kitty Terminal
 - i3Wm
 - Picom
 - Polybar
