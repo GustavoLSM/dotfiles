@@ -26,10 +26,10 @@ font pango:Hack Nerd Font Mono 8
 #font pango:DejaVu Sans Mono 8
 
 # Load keyboard layout
-exec "setxkbmap -layout br"
+exec_always --no-startup-id setxkbmap "br"
 
 # Load status bar
-exec_always --no-startup-id polybar 
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -74,7 +74,7 @@ bindsym $mod+c kill
 bindsym $mod+space exec rofi -show combi
 
 # Start firefox and file explorer
-bindsym $mod+Shift+w exec --no-startup-id firefox
+bindsym $mod+Shift+w exec --no-startup-id chromium
 bindsym $mod+Shift+f exec --no-startup-id nautilus
 
 # Takes screenshots
