@@ -1,6 +1,6 @@
 # Dependências
 - Fonte Noto-Emoji e Noto-Extras
-- Fonte Hack Nerd Font Mono
+- Fonte GeistMono Nerd Font
 - Kitty Terminal
 - i3Wm
 - Picom
