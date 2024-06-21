@@ -74,7 +74,7 @@ bindsym $mod+c kill
 bindsym $mod+space exec rofi -show combi
 
 # Start firefox and file explorer
-bindsym $mod+Shift+w exec --no-startup-id chromium
+bindsym $mod+Shift+w exec --no-startup-id chromium --password-store=gnome
 bindsym $mod+Shift+f exec --no-startup-id nautilus
 
 # Takes screenshots
