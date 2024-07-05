@@ -60,7 +60,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 "" Plugins
 call plug#begin()
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -69,8 +68,7 @@ call plug#end()
 
 "" Tema
 set background=dark
-colorscheme PaperColor
-let g:airline_theme='behelit'
+let g:airline_theme='minimalist'
 
 "" ATALHOS
 "" Tecla leader
@@ -78,9 +76,6 @@ let mapleader = " "
 
 "" Buscar arquivo
 nnoremap <leader>ff :find 
-
-"" Salvar arquivo
-nnoremap <leader>fs :w<CR>
 
 "" Abrir árvore de arquivos
 nnoremap <leader>e :Ex<CR>
@@ -91,15 +86,8 @@ nnoremap <leader>nh :nohl<CR>
 "" Copiar texto para área de transferência do sistema operacional
 xnoremap Y "+y
 
-"" Fazer comandos rapidamente
-nnoremap ;; :
-
 "" Pular rapidamente entre splits e controlar tamanho da janela ocupada por eles
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
