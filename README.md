@@ -1,13 +1,24 @@
 # Dependências
+### Sistema
+- Stow
 - Fonte Noto-Emoji e Noto-Extras
 - Fonte GeistMono Nerd Font
-- Kitty Terminal
+
+### Window Manager
 - i3Wm
+- Kitty Terminal
 - Picom
 - Polybar
 - Rofi
 - Maim
 - Feh
+
+### Vim e Tmux
+- Tmux Plugin Manager
+- Vim Plug
+- Xclip
+- Ripgrep
+- Fd
 
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
