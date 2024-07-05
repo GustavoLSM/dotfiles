@@ -85,9 +85,3 @@ nnoremap <leader>nh :nohl<CR>
 
 "" Copiar texto para área de transferência do sistema operacional
 xnoremap Y "+y
-
-"" Pular rapidamente entre splits e controlar tamanho da janela ocupada por eles
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
