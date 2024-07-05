@@ -60,13 +60,17 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 "" Plugins
 call plug#begin()
-Plug 'nikolvs/vim-sunbather'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 "" Tema
 set background=dark
-colorscheme sunbather
+colorscheme PaperColor
+let g:airline_theme='behelit'
 
 "" ATALHOS
 "" Tecla leader
