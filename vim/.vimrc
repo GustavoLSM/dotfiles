@@ -76,7 +76,7 @@ set t_RV=
 let mapleader = " "
 
 "" Buscar arquivo
-nnoremap <leader>ff :find 
+nnoremap <leader>f :find 
 
 "" Abrir árvore de arquivos
 nnoremap <leader>e :Ex<CR>
