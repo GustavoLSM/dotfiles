@@ -9,9 +9,6 @@
 - Maim
 - Feh
 
-### Instalação
-- Após instalar as dependências, executar o script install.sh
-
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
 - Lxappearance configura temas GTK
