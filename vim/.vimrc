@@ -60,15 +60,16 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 "" Plugins
 call plug#begin()
+Plug 'whatyouhide/vim-gotham'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 "" Tema
 set background=dark
-let g:airline_theme='minimalist'
+colorscheme gotham
+set t_RV=
 
 "" ATALHOS
 "" Tecla leader
