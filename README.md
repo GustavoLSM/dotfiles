@@ -13,12 +13,11 @@
 - Maim
 - Feh
 
-### Vim e Tmux
-- Tmux Plugin Manager
-- Vim Plug
+### NeoVim e Tmux
 - Xclip
 - Ripgrep
 - Fd
+- Tmux Plugin Manager
 
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
