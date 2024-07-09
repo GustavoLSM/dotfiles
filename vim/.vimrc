@@ -78,6 +78,12 @@ let mapleader = " "
 "" Buscar arquivo
 nnoremap <leader>f :find 
 
+"" Buffer anterior
+nnoremap <leader>bb :bp<CR>
+
+"" Próximo buffer
+nnoremap <leader>bn :bn<CR>
+
 "" Abrir árvore de arquivos
 nnoremap <leader>e :Ex<CR>
 
