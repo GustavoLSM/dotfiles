@@ -35,6 +35,7 @@ set nobackup
 "" Ignorar cases e ter pesquisa mais inteligente
 set incsearch
 set ignorecase
+set smartcase
 set showmatch
 set hlsearch
 
