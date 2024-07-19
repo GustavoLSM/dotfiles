@@ -13,6 +13,13 @@
 - Maim
 - Feh
 
+### VIM / TMUX
+- VIM Plug
+- Ripgrep
+- FD
+- Xclip
+- TMUX Plugin Manager
+
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
 - Lxappearance configura temas GTK
