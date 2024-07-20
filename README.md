@@ -13,8 +13,8 @@
 - Maim
 - Feh
 
-### VIM / TMUX
-- VIM Plug
+### NVIM / TMUX
+- NodeJS
 - Ripgrep
 - FD
 - Xclip
