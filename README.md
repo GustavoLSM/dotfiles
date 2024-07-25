@@ -15,6 +15,7 @@
 
 ### NVIM / TMUX
 - NodeJS
+- Intelephense
 - Ripgrep
 - FD
 - Xclip
