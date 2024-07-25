@@ -1,48 +1,45 @@
--- Nvim cmp
+-- Code Completion
 return {
-    'hrsh7th/nvim-cmp', -- Clone the code completion engine
-    event = 'InsertEnter', -- Enable only in insert mode
+    'neovim/nvim-lspconfig', -- Bridge NeoVim engine with the LSP engine
     dependencies = {
-        'hrsh7th/cmp-buffer', -- Source for text in current file
-        'hrsh7th/cmp-path', -- Source for system paths
-        { 'L3MON4D3/LuaSnip', version = 'v2.*' }, -- Clone the snippets engine
+        'hrsh7th/nvim-cmp', -- Clone autocompletion engine
+        'hrsh7th/cmp-nvim-lsp', -- Clone LSP source for autocompletion engine
+        'hrsh7th/cmp-buffer', -- Clone text in buffer source for autocompletion engine
+        'hrsh7th/cmp-path', -- Clone system path source for autocompletion engine
+        'L3MON4D3/LuaSnip', -- Clone Snippets engine
+        {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'}, -- Bridge autocompletion engine with the LSP engine
     },
     config = function()
-        -- Local variables
-        local cmp = require('cmp') -- Load code completion engine
-        local luasnip = require('luasnip') -- Load snippet engine
+        -- Enable LSP diagnostics and shortcuts
+        require('lsp-zero').on_attach(function(client, bufnr)
+            vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {}) -- LSP variable rename
+            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {}) -- Code actions
+            vim.keymap.set('n', 'K', vim.lsp.buf.hover, {}) -- Documentation
+            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- Go to definition
+        end)
 
-        -- Javascript React
-        require('luasnip').filetype_extend('typescript', { 'javascript' }) -- Enable React snippets
-
-        -- Code completion engine settings
-        cmp.setup({
-            completion = {
-                completeopt = 'menu,menuone,preview,noselect', -- Enable code completion
+        -- Enable code completion
+        require('cmp').setup({
+            sources = { -- Source for suggestions
+                {name = 'nvim_lsp'}, -- Suggestions from LSP
+                {name = 'path'}, -- Suggestion from system path
             },
-
-            -- Snippet engine settings
-            snippet = {
+            mapping = { -- Shortcus for code completion
+                ['<C-Space>'] = require('cmp').mapping.complete(), -- Open suggestion menu
+                ['<C-e>'] = require('cmp').mapping.abort(), -- Cancel auto complete
+                ['<CR>'] = require('cmp').mapping.confirm({ select = true }), -- Confirm selected suggestion
+            },
+            snippet = { -- Enable snippet engine while writing
                 expand = function(args)
-                    luasnip.lsp_expand(args.body) -- Enable interaction between completion engine and snippet engine
+                    require('luasnip').lsp_expand(args.body)
                 end,
             },
+        })
 
-            -- Keyboard shortcuts
-            mapping = cmp.mapping.preset.insert({
-                ['<C-j>'] = cmp.mapping.select_next_item(), -- Next suggestion
-                ['<C-k>'] = cmp.mapping.select_prev_item(), -- Previous suggestion
-                ['<C-Space>'] = cmp.mapping.complete(), -- Show completion suggestions
-                ['<C-e>'] = cmp.mapping.abort(), -- Close completion window
-                ['<CR>'] = cmp.mapping.confirm({ select = false }), -- Confirm completion
-            }),
-
-            -- Sources for code completion
-            sources = cmp.config.sources({
-                { name = 'luasnip' }, -- Snippet engine
-                { name = 'buffer' }, -- Text in the current file
-                { name = 'path' }, -- System paths
-            }),
+        -- Load PHP LSP
+        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        require('lspconfig').intelephense.setup({
+            capabilities = capabilities
         })
     end,
 }
