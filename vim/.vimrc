@@ -78,20 +78,25 @@ set wildignore+=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*/
 " Plugins
 call plug#begin()
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'ervandew/supertab'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
-" SuperTab completa de cima pra baixo
- let g:SuperTabDefaultCompletionType = "<c-n>"
-
 " Tema
+set termguicolors
 set background=dark
-colorscheme retrobox
+let g:material_theme_style = 'ocean'
+let g:airline_theme = 'material'
+colorscheme material
+
+" SuperTab completa de cima pra baixo
+let g:SuperTabDefaultCompletionType = '<c-n>'
 
 " Leader
-let mapleader = " "
+let mapleader = ' '
 
 " Buscar arquivo
 nnoremap <leader>f :find 
