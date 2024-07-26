@@ -3,6 +3,8 @@
 - Stow
 - Fonte Noto-Emoji e Noto-Extras
 - Fonte GeistMono Nerd Font
+- ZSH Shell
+- OH MY ZSH!
 
 ### Window Manager
 - i3Wm
@@ -12,6 +14,10 @@
 - Rofi
 - Maim
 - Feh
+
+### TMUX e VIM
+- TMUX Plugin Manager
+- Vim Plug
 
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
