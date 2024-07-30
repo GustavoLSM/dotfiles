@@ -15,9 +15,12 @@
 - Maim
 - Feh
 
-### TMUX e VIM
+### TMUX e NVIM
 - TMUX Plugin Manager
-- Vim Plug
+- Xclip
+- NodeJS
+- Ripgrep
+- Fd
 
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
