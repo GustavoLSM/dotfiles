@@ -15,12 +15,11 @@
 - Maim
 - Feh
 
-### TMUX e VIM
-- TMUX Plugin Manager
+### Tmux e Vim
+- Tmux Plugin Manager
 - Vim Plug
-- Bat Cat Clone With Wings
-- Silver Searcher
-- Ripgrep
+- Bat
+- The Silver Searcher
 - Perl
 - Ctags
 - Xclip
