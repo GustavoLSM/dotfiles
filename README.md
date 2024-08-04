@@ -15,12 +15,15 @@
 - Maim
 - Feh
 
-### TMUX e NVIM
+### TMUX e VIM
 - TMUX Plugin Manager
-- Xclip
-- NodeJS
+- Vim Plug
+- Bat Cat Clone With Wings
+- Silver Searcher
 - Ripgrep
-- Fd
+- Perl
+- Ctags
+- Xclip
 
 # Observações
 ### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
