@@ -38,7 +38,7 @@ set shiftwidth=4
 " Número de colunas inseridas com TAB e removidas com BACKSPACE 
 set softtabstop=4
 
-" Arquivos de backup
+" Não guardar arquivos de backup
 set nobackup
 
 " Seleciona caractéres que batem com o que está sendo pesquisado
@@ -47,7 +47,7 @@ set incsearch
 " Ignorar letras maiúsculas em pesquisa
 set ignorecase
 
-" Se houver letra maiúscula então busca exatamente o que está escrito
+" Se houver letra maiúscula então busca exatamente como está sendo escrito
 set smartcase
 
 " Mostra palavras que batem com a pesquisa
@@ -56,24 +56,15 @@ set showmatch
 " Habilita o highlight nas pesquisas
 set hlsearch
 
-" Histórico de comandos maior
-set history=1000
-
 " Permite autocompletar comandos do VIM com TAB
 set wildmenu
 set wildmode=longest:full,full
 
-" Abre menu para completar palavra já escrita
+" Abre menu para completar palavra já escrita no arquivo atual
 set completeopt=menuone,longest
 
-" Não mostra mensagens no menu de completar
+" Não mostra mensagens ao completar código
 set shortmess+=c
-
-" Procura arquivos na pasta atual com find
-set path+=**
-
-" Ignora os seguintes arquivos no comando find
-set wildignore+=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*/node_modules/*
 
 " Plugins
 call plug#begin()
@@ -81,7 +72,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-scripts/AutoComplPop'
-Plug 'ervandew/supertab'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -95,16 +85,13 @@ let g:material_theme_style = 'ocean'
 let g:airline_theme = 'material'
 colorscheme material
 
-" SuperTab completa de cima pra baixo
-let g:SuperTabDefaultCompletionType = '<c-n>'
-
 " Leader
 let mapleader = ' '
 
-" Buscar arquivo
-nnoremap <C-f> :find 
+" Buscar arquivo por nome
+nnoremap <C-f> :Files<CR>
 
-" Buscar conteúdo de arquivos
+" Buscar por conteúdo dentro de arquivo
 nmap <Leader>f <Plug>AgRawSearch
 nmap <C-h> <Plug>AgRawWordUnderCursor
 
