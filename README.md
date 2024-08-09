@@ -24,11 +24,10 @@
 - Ctags
 - Xclip
 
-# Observações
-### Para instalar temas, como modo escuro, é necessário instalar algum tema GTK ou Qt que tenha versão escura.
+# Temas
+### Para configurar temas GTK/Qt é necessário instalar duas ferramentas
 - Lxappearance configura temas GTK
 - Qt5ct configura temas Qt
 
-### Para que os temas aplicados funcionem é necessário setar duas variáveis de ambiente em /etc/environment
+### Para que os temas Qt aplicados funcionem é necessário setar uma variável de ambiente em /etc/environment
 - QT_QPA_PLATFORMTHEME=qt5ct
-- GTK_THEME=TEMA ESCOLHIDO
