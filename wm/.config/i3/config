@@ -75,7 +75,7 @@ bindsym $mod+space exec rofi -show combi
 
 # Start firefox and file explorer
 bindsym $mod+Shift+w exec --no-startup-id firefox
-bindsym $mod+Shift+f exec --no-startup-id nautilus
+bindsym $mod+Shift+f exec --no-startup-id thunar
 
 # Takes screenshots
 bindsym Print exec maim | xclip -selection clipboard -t image/png
