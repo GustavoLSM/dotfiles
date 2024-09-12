@@ -10,6 +10,30 @@ return {
 			close_if_last_window = true,
 			window = {
 				position = "right",
+				mappings = {
+					["<space>"] = {
+						"toggle_node",
+						nowait = true
+					}
+				}
+			},
+			filesystem = {
+				filtered_items = {
+					hide_dotfiles = false,
+					hide_by_name = {
+						".git"
+					}
+				}
+			},
+			nesting_rules = {
+				["package.json"] = {
+					files = { ".eslint*", "prettier*", "tsconfig*", "vite*", "pnpm-lock*", "package-lock*", "bun.lockb" },
+					pattern = "package%.json$"
+				},
+				[".env"] = {
+					files = { ".env*" },
+					pattern = "%.env$"
+				}
 			}
 		})
 		vim.keymap.set("n", "<leader>e", vim.cmd.Neotree)
