@@ -18,7 +18,8 @@
 ### Terminal
 - GeistMono Nerd Font
 - Kitty
-- Starship
+- Zsh
+- Oh My Zsh
 - Xclip
 
 ### NeoVim
