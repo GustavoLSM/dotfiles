@@ -6,6 +6,8 @@ vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 vim.keymap.set("n", "<leader>c", "* :%s//")
 
+vim.keymap.set("n", "<leader>t", ":! ")
+
 vim.keymap.set("v", "Y", '"+y')
 
 vim.keymap.set("n", "<C-h>", "<C-w>h")
