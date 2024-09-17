@@ -26,6 +26,7 @@ return {
 
 		require("mason").setup({})
 		require("mason-lspconfig").setup({
+			ensure_installed = { "intelephense", "clangd", "lua_ls" },
 			handlers = {
 				function(server_name)
 					require("lspconfig").intelephense.setup({})
