@@ -46,7 +46,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Load Wallpaper and compositor
-exec_always feh --bg-scale ~/dotfiles/background/Wallpaper.jpg
+exec_always feh --bg-scale ~/dotfiles/background/Wallpaper.png
 exec --no-startup-id picom
 
 # Use pactl to adjust volume in PulseAudio.
@@ -72,8 +72,8 @@ bindsym $mod+c kill
 # start rofi 
 bindsym $mod+space exec rofi -show combi
 
-# Start firefox and file explorer
-bindsym $mod+Shift+w exec --no-startup-id firefox-developer-edition
+# Start chrome and file explorer
+bindsym $mod+Shift+w exec --no-startup-id google-chrome-unstable
 bindsym $mod+Shift+f exec --no-startup-id thunar
 
 # Takes screenshots
