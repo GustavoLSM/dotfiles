@@ -5,6 +5,7 @@
 - noto-fonts-emoji
 - noto-fonts-extra
 - ttf-font-awesome
+- otf-comicshanns-mono
 - GVFS
 - Stow
 
@@ -16,7 +17,6 @@
 - Rofi
 
 ### Terminal
-- GeistMono Nerd Font
 - Kitty
 - Zsh
 - Oh My Zsh
