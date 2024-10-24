@@ -1,0 +1,3 @@
+terminal/.config/tmux/plugins/
+neovim/.config/nvim/lazy-lock.json
+neovim/.config/nvim/.luarc.json
